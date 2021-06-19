@@ -4,7 +4,9 @@
 
 ### Understanding the compute options
 
-GCP provides various compute options to deploy your application and to use the actual Google infrastructure to run your applications. The options available are as follows:
+GCP provides various compute options to deploy your application and to use the actual Google infrastructure to run your applications.
+
+The options available are as follows:
 
 - Infrastructure as a Service (IaaS)
 - Containers
