@@ -65,3 +65,12 @@ Cloud Dataflow is integrated with other GCP services such as Cloud Pub/Sub, Clou
 Cloud Dataflow auto scales on its own based on the requirements of the job.
 
 
+Cloud Dataflow pricing is mostly the same for batch and stream jobs, apart from the pricing for data processed. It charges on the basis of VCPU, RAM, persistent storage, and amount of data processed.
+
+
+## Cloud Dataflow and AI applications
+
+Cloud Dataflow can serve various AL and ML use cases in integration with Cloud Machine Learning. Fraud detection is a classic use case, which can be implemented with Cloud Dataflow and Cloud Machine Learning for streaming jobs.
+
+So far, we have learned the essentials of GCP that will help us to use the platform in an efficient way, make the right choices, and build effective pipelines. You now have knowledge of all available compute, storage, and processing options on GCP. 
+
