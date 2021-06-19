@@ -52,4 +52,9 @@ Let's quickly talk about an option that will help to reduce the pricing. If it i
 While training models for AI (ML) applications, there is always a need for powerful machines to increase the efficiency of the model by providing ample training data and reducing the time to train the model. Google Compute Engine has multiple options to spin up powerful compute instances and groups that can train and run the model over it. For training and running models, you should use the power of CPUs and GPUs. For TensorFlow applications, there are machines with TPUs that should be used.
 
 
+#### App Engine
+
+App Engine is the PaaS provided by Google Cloud; it is a fully managed serverless application platform. App Engine is available in most of the regions covered by Google Cloud. You can consider App Engine a deployment-ready infrastructure; the developer just has to focus on building the application and deploying it on App Engine, and everything else will be taken care of.
+
+App Engine comes with great features like auto-scaling, traffic splitting, application security, monitoring, and debugging—all these features are essential for deploying, securing, and scaling any application. Using tools like Cloud SDK and IntelliJ IDEA, developers can directly connect to App Engine and perform operations like debugging source code and running the API backend. One limitation of App Engine is that its operating system cannot be customized.
 
