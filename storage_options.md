@@ -32,4 +32,9 @@ Cloud Bigtable can act as storage in various AI and ML use cases. Most of the bi
 Cloud Datastore can act as storage in AI and ML use cases for large web applications. Any e-commerce website hosted on GCP can use Datastore to save data, and using this data, ML models can be trained and can provide required recommendations to the user and in turn can increase customer satisfaction.
 
 
+## Cloud Firestore and AI applications
+
+Cloud Firestore can act as storage in AI and ML use cases for applications that are hosted on mobile and web devices. Any application hosted on GCP with both website and mobile applications can save the data in Firestore, and using this data, ML models can be trained and can provide required recommendations to users on both their mobile devices and website applications.
+
+
 
