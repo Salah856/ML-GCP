@@ -1,6 +1,6 @@
 
 
-# Understanding the processing options 
+# Understanding the processing options for ML in GCP
 
 Apart from the IaaS option, which you can use for building your own AI and ML pipeline using compute options, Google provides a few managed services that can be used to process your data and build AI and ML pipelines. The following are the fully managed processing options:
 
