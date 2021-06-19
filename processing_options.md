@@ -38,3 +38,10 @@ BigQuery comes in two pricing models: "pay as you go," which costs users $5 per 
 
 BigQuery ML is the BigQuery machine learning flavor that has a few built-in algorithms that can be directly used in SQL queries for training models and predicting output. BigQuery ML currently has support for linear regression, binary logistic regression, and multiclass logistic regression for classification models.
 
+
+## Cloud Dataproc
+
+Cloud Dataproc is a fully managed Hadoop and Spark cluster that can be spun within a few seconds. Cloud Dataproc is an auto scaling cluster and can be used to run Hadoop, Spark, and AI and ML applications very effectively. At peak hours, nodes can be added to the cluster based on usage, and it can scale down when there are lower requirements.
+
+
+
