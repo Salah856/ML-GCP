@@ -20,7 +20,6 @@ Next, we will discuss the following storage options in detail:
 - Cloud SQL
 - Cloud Spanner
 - Cloud Memorystore
-- Cloud Filestore
 
 ## Cloud Bigtable and AI applications
 
@@ -45,4 +44,8 @@ Cloud SQL can serve all the AI and ML use cases for large and complex structured
 ## Cloud Spanner and AI applications
 
 Cloud Spanner can serve all the AI and ML use cases which are suitable for MySQL and PostgreSQL. Cloud SQL is right for serving AI and ML use cases that require up to 10 TB of structured data; for example, a machine learning use case requires data preparation, which involves complex SQL joins and can increase the efficiency of the process.
+
+## Cloud Memorystore and AI applications
+
+Cloud Memorystore can serve various AL and ML use cases using Redis ML modules. Redis ML has various ML modules as built-in data types. Cloud Memorystore can serve machine learning modules for linear and logistic regression, decision tree matrix calculations, and so on.
 
