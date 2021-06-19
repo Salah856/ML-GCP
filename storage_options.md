@@ -13,7 +13,6 @@ Choosing the right storage option for your application is important. Based on th
 
 Next, we will discuss the following storage options in detail:
 
-- Cloud Storage
 - Cloud Bigtable
 - Cloud Datastore
 - Cloud Firestore
@@ -22,3 +21,15 @@ Next, we will discuss the following storage options in detail:
 - Cloud Spanner
 - Cloud Memorystore
 - Cloud Filestore
+
+## Cloud Bigtable and AI applications
+
+Cloud Bigtable can act as storage in various AI and ML use cases. Most of the big data migration or modern data platforms use cloud Bigtable to build their NoSQL Database. For example, a streaming ML application can use Bigtable very well as a backend.
+
+
+## Cloud Datastore and AI applications
+
+Cloud Datastore can act as storage in AI and ML use cases for large web applications. Any e-commerce website hosted on GCP can use Datastore to save data, and using this data, ML models can be trained and can provide required recommendations to the user and in turn can increase customer satisfaction.
+
+
+
