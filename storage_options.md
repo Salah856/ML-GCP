@@ -49,3 +49,4 @@ Cloud Spanner can serve all the AI and ML use cases which are suitable for MySQL
 
 Cloud Memorystore can serve various AL and ML use cases using Redis ML modules. Redis ML has various ML modules as built-in data types. Cloud Memorystore can serve machine learning modules for linear and logistic regression, decision tree matrix calculations, and so on.
 
+
