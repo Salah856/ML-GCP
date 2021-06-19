@@ -58,3 +58,32 @@ App Engine is the PaaS provided by Google Cloud; it is a fully managed serverles
 
 App Engine comes with great features like auto-scaling, traffic splitting, application security, monitoring, and debugging—all these features are essential for deploying, securing, and scaling any application. Using tools like Cloud SDK and IntelliJ IDEA, developers can directly connect to App Engine and perform operations like debugging source code and running the API backend. One limitation of App Engine is that its operating system cannot be customized.
 
+App Engine comes in two different environments:
+
+- Standard
+- Flexible
+
+The App Engine standard environment applications run in a sandbox environment and have support for running Python, Java, Node.js, Go, and PHP applications.
+
+On the other hand, the App Engine flexible environment applications run in Docker containers on a Google Compute Engine virtual machine and support running Ruby and .NET applications in addition to the languages supported by the standard environment.
+
+App Engine is very useful for deploying any web or mobile application. Based on usage of resources, infrastructure will autoscale and Google will only charge for what applications has used.
+
+
+#### App Engine and AI applications
+
+While running any mobile or web application on App Engine, there are a lots of use cases where there is a need for AI in those applications. These can be fulfilled while deploying your application in App Engine. The service can be deployed with cloud endpoints, and a Python application can be deployed in App Engine, which loads trained machine learning models. Once the models are accessible via App Engine, the service can send requests to Python application and get responses in a consistent manner.
+
+
+
+#### Cloud Functions
+
+Cloud Functions is an event-driven serverless PaaS, provided by Google Cloud, and fits well within the microservice architecture.
+
+Cloud Functions is available in most of the regions covered by Google Cloud. They are mostly used for small or single-purpose functions, like invoking other services or writing an event to a pub/sub topic, and so on.
+
+There are some great features in Cloud Functions that provide agility and zero downtime maintenance. Cloud Functions can autosale, and they are highly available. You can connect to most of the Google Cloud services using Cloud Functions.
+
+Cloud Functions can be developed in JavaScript or Python. The user has to pay for Cloud Functions only when they are running. This makes it very cost-effective.
+
+
