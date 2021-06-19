@@ -11,3 +11,11 @@ Choosing the right storage option for your application is important. Based on th
 ![1](https://user-images.githubusercontent.com/23625821/122635361-bbb09e80-d0e3-11eb-9570-5d05cda51873.png)
 
 
+Next, we will discuss the following storage options in detail:
+
+- Cloud Storage
+- Cloud Bigtable
+
+- Cloud Datastore
+- Cloud Firestore
+- Cloud SQL
