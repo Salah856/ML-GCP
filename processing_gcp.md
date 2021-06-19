@@ -46,3 +46,10 @@ Users can create managed and unmanaged instance groups in Compute Engine:
 
 Let's quickly talk about an option that will help to reduce the pricing. If it is possible, use preemptible machines. The preemptible virtual machines are short-lived and low-cost options that can be utilized when the workloads are known and expected to finish within 24 hours. These virtual machines provide a significant cost advantage and result in a cost saving of up to 80% compared with regular instances. Preemptible machines will save up to 80% of the cost but there is a catch: Google can always take that instance back from you with 30 seconds, notice. Google charges per second and gives sustainable user discounts.
 
+
+#### Compute Engine and AI applications
+
+While training models for AI (ML) applications, there is always a need for powerful machines to increase the efficiency of the model by providing ample training data and reducing the time to train the model. Google Compute Engine has multiple options to spin up powerful compute instances and groups that can train and run the model over it. For training and running models, you should use the power of CPUs and GPUs. For TensorFlow applications, there are machines with TPUs that should be used.
+
+
+
