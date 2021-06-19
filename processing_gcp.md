@@ -31,3 +31,5 @@ Next, we will discuss the following compute options in detail:
 
 Compute Engine is the IaaS provided by Google Cloud; it is a virtual machine running in the Google infrastructure.
 
+Compute Engine is available across all the zones and regions provided by Google Cloud. It comes with a storage option of persistent disk and local Solid-State Drives (SSDs).SSDs are internally built with the integrated circuits on chips, and do not contain any spinning heads or disk drives for reading data. The SSDs are more durable and provide faster read times compared to hard disk drives. A persistent disk is a network storage that can be extended up to 64 TB, while the local SSD is the encrypted drive, which is actually attached to the server and can extend up to 3 TB.
+
