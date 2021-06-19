@@ -37,4 +37,12 @@ Cloud Datastore can act as storage in AI and ML use cases for large web applicat
 Cloud Firestore can act as storage in AI and ML use cases for applications that are hosted on mobile and web devices. Any application hosted on GCP with both website and mobile applications can save the data in Firestore, and using this data, ML models can be trained and can provide required recommendations to users on both their mobile devices and website applications.
 
 
+## Cloud SQL and AI applications
+
+Cloud SQL can serve all the AI and ML use cases for large and complex structured data. Another service named Cloud Spanner can serve similar use cases, which can be served by Cloud SQL, but on a very large scale.
+
+
+## Cloud Spanner and AI applications
+
+Cloud Spanner can serve all the AI and ML use cases which are suitable for MySQL and PostgreSQL. Cloud SQL is right for serving AI and ML use cases that require up to 10 TB of structured data; for example, a machine learning use case requires data preparation, which involves complex SQL joins and can increase the efficiency of the process.
 
