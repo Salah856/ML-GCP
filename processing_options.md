@@ -43,5 +43,25 @@ BigQuery ML is the BigQuery machine learning flavor that has a few built-in algo
 
 Cloud Dataproc is a fully managed Hadoop and Spark cluster that can be spun within a few seconds. Cloud Dataproc is an auto scaling cluster and can be used to run Hadoop, Spark, and AI and ML applications very effectively. At peak hours, nodes can be added to the cluster based on usage, and it can scale down when there are lower requirements.
 
+Beneath a Dataproc cluster Google actually runs compute instances. Users can choose from a wide range of machine configurations to build the cluster or if existing machine configurations are not sufficing the needs, users can build a cluster with a custom machine configuration as well. One very important thing to note here is the use of preemptive instances with the Dataproc cluster. This can work wonders with the pricing of the cluster.
+
+Preemptive instances come at much lower prices, approximately at 20% of the actual instance with the same configuration, with the catch that Google can take the instance back with notification of 30 seconds.
+
+With a Dataproc cluster, preemptive instances can be used as data nodes because generally a Dataproc cluster will be used for compute purpose and all data will be saved in Cloud Storage. So in this case, even if a preemptive instance goes down, that job will be shifted to another node and there will be no impact. Cloud Dataproc cluster pricing varies with instances, but it has very competitive pricing.
+
+
+## Cloud Dataproc and AI applications
+
+Cloud Dataproc can serve various AI and ML use cases using Apache Spark, Hadoop, and other tools. Consider Dataproc as a fully managed cloud Hadoop and Spark cluster. All the AI and ML use cases that can be built on Hadoop and Spark can be built on the Cloud Dataproc cluster.
+
+
+## Cloud Dataflow
+
+Cloud Dataflow is a fully managed service for running both batch and streaming applications, and has rich integration for running AI and ML jobs. It is a serverless service provided by Google and is built on top of Apache Beam, and, because of this, both the batch and streaming code can be used with each other. Cloud Dataflow applications can be built in Java and Python in a very simplified way.
+
+
+Cloud Dataflow is integrated with other GCP services such as Cloud Pub/Sub, Cloud Machine Learning, Stackdriver, BigQuery, and Bigtable, which makes it very easy to build Cloud Dataflow jobs. Beneath Cloud Dataflow, App Engine is running, and because of that the user has unlimited capacity to scale their jobs.
+
+Cloud Dataflow auto scales on its own based on the requirements of the job.
 
 
