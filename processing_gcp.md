@@ -87,3 +87,19 @@ There are some great features in Cloud Functions that provide agility and zero d
 Cloud Functions can be developed in JavaScript or Python. The user has to pay for Cloud Functions only when they are running. This makes it very cost-effective.
 
 
+#### Kubernetes Engine
+
+- Kubernetes Engine is a managed service provided by Google Cloud; it is used to deploy and run containerized applications. The following are the features of Kubernetes Engine:
+
+- It is available across all the zones and regions provided by Google Cloud.
+- Beneath the Kubernetes cluster, Google is actually running Compute Engine, so most of the advantages we have with Compute Engine will be available with the
+Kubernetes Engine, along with the additional services provided by it.
+
+- In Kubernetes cluster, virtual machines with customized OS images can be used and the cluster will autoscale the customized images. Kubernetes clusters are highly secure and backed by HIPAA and PCI DSS 3.1 compliance.
+
+- It comes with a dashboard service allowing the user to manage it.
+- It auto-upgrades and auto-repairs itself.
+
+- It supports common Docker images and a private container registry through which users can access private Docker images.
+- Kubernetes clusters can be integrated with Stackdriver to enable monitoring and logging of the cluster.
+
