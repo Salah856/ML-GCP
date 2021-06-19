@@ -15,7 +15,10 @@ Next, we will discuss the following storage options in detail:
 
 - Cloud Storage
 - Cloud Bigtable
-
 - Cloud Datastore
 - Cloud Firestore
+
 - Cloud SQL
+- Cloud Spanner
+- Cloud Memorystore
+- Cloud Filestore
