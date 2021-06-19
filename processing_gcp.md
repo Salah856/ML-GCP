@@ -33,3 +33,16 @@ Compute Engine is the IaaS provided by Google Cloud; it is a virtual machine run
 
 Compute Engine is available across all the zones and regions provided by Google Cloud. It comes with a storage option of persistent disk and local Solid-State Drives (SSDs).SSDs are internally built with the integrated circuits on chips, and do not contain any spinning heads or disk drives for reading data. The SSDs are more durable and provide faster read times compared to hard disk drives. A persistent disk is a network storage that can be extended up to 64 TB, while the local SSD is the encrypted drive, which is actually attached to the server and can extend up to 3 TB.
 
+
+While spinning up the instance, the user can either select one of the predefined compute options or go with a customized configuration. Compute Engine can be launched with either a Linux or Windows operating system. These instances can be launched with a CPU, GPU, and TPU, and since the infrastructure is provided by Google, users can do operating system-level customization.
+
+
+Users can create managed and unmanaged instance groups in Compute Engine:
+
+- A managed instance group will always contain identical virtual machines and support auto scaling, high availability, rolling updates, and more.
+- An unmanaged instance group can contain machines with different configurations. Users can use instance templates while creating a managed instance group but not with an unmanaged instance group.
+
+- It is suggested to select a managed and uniform instance group until there is a very specific need for machines of different configurations in the same pool.
+
+Let's quickly talk about an option that will help to reduce the pricing. If it is possible, use preemptible machines. The preemptible virtual machines are short-lived and low-cost options that can be utilized when the workloads are known and expected to finish within 24 hours. These virtual machines provide a significant cost advantage and result in a cost saving of up to 80% compared with regular instances. Preemptible machines will save up to 80% of the cost but there is a catch: Google can always take that instance back from you with 30 seconds, notice. Google charges per second and gives sustainable user discounts.
+
