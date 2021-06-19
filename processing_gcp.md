@@ -17,3 +17,17 @@ All compute options communicate with other GCP services and products, like stora
 
 Google compute options help you to run virtual machines of multiple sizes on Google infrastructure and to customize them. It enables you to run containerized applications, and you can directly deploy your code on the engines if you don't have to take care of infrastructure-related items. So based on your needs, Google provides multiple options to use compute power, expedite the development effort, and reduce the time to market.
 
+
+Next, we will discuss the following compute options in detail:
+
+- Compute Engine
+- App Engine
+
+- Cloud Functions
+- Kubernetes Engine
+
+
+#### Compute Engine
+
+Compute Engine is the IaaS provided by Google Cloud; it is a virtual machine running in the Google infrastructure.
+
