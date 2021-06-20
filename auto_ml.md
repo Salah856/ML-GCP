@@ -66,3 +66,29 @@ The time required for model training depends on the volume and variation of the 
 ![1](https://user-images.githubusercontent.com/23625821/122669690-cf7d0300-d1be-11eb-8656-720db6733efc.png)
 
 
+### Evaluation the model 
+
+Here is the Node.js implementation of the evaluation code. The code is concise and asynchronously calls the evaluation API:
+
+```js 
+
+const automl = require(`@google-cloud/automl`);
+const util = require(`util`);
+const client = new automl.v1beta1.AutoMlClient();
+
+const projectId = `PROJECT_ID`;
+const computeRegion = `REGION_NAME`;
+const modelId = `MODEL_ID`;
+const modelEvaluationId = `MODEL_EVAL_ID”;
+
+// Get the full path of the model evaluation.
+const modelEvaluationFullId = client.modelEvaluationPath(projectId, computeRegion, modelId, modelEvaluationId );
+
+
+// Get complete detail of the model evaluation.
+const [response] = await client.getModelEvaluation({name: modelEvaluationFullId,});
+
+console.log(util.inspect(response, false, null));
+
+
+```
