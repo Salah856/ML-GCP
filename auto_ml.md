@@ -12,3 +12,9 @@ For example, in the case of a sales forecasting model for a retail store, histor
 Traditionally, in a non-cloud environment, this process needs to be fully managed by the data scientist. GCP Cloud AutoML is a fully managed environment that takes care of all of the operational processes, infrastructure, and model management. GCP Cloud AutoML provides interfaces for the models related to Natural Language Processing (NLP) and Computer Vision (CV).
 
 
+The advantages of Cloud AutoML are as follows:
+
+- Ease of use
+- High performance
+- Speed & agility
+
