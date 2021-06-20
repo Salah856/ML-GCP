@@ -86,3 +86,27 @@ FROM
 Leads.Leads_Training_Data;
 
 ```
+
+### Evaluating the model
+
+In BigQuery , you can use the ml.evaluate() function to evaluate any model. It will give results for that model. In the following code block are the BigQuery code and model evaluation results. Let's have a look at the following code:
+
+```sql
+
+SELECT * FROM
+ml.evaluate (model `Leads.lead_model_optimum`,
+(
+SELECT Lead_Stage AS label, *
+FROM
+`Leads.Leads_Training_Data` )
+)
+
+```
+
+
+In the preceding code, we have evaluated lead_model_optimum to find its details. Let's have a look at the following results, after executing the preceding query:
+
+
+![1](https://user-images.githubusercontent.com/23625821/122663487-2a046800-d19b-11eb-9d6f-b0523484b59d.png)
+
+
