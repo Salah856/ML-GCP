@@ -56,3 +56,13 @@ Provide a unique name for the dataset (in this case, newsgroups ). GCP provides 
 
 
 
+### Training the model
+
+When the dataset is created and fully labeled, the model can be trained. Click on the TRAIN NEW MODEL button to start the asynchronous training process by providing a name for the model. The model name can be up to 32 characters and can contain letters, numbers, and underscores.
+
+The time required for model training depends on the volume and variation of the training data. It may take between a few minutes to hours to train the model. Once the model training is completed, an email notification is sent to the registered email ID.
+
+
+![1](https://user-images.githubusercontent.com/23625821/122669690-cf7d0300-d1be-11eb-8656-720db6733efc.png)
+
+
