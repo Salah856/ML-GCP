@@ -49,4 +49,8 @@ Let's discuss the step-by-step process to load data into Cloud Storage:
 6. Choose a regional bucket for your use case.
 
 7. Select the Location where you want to create the bucket.
+8. Click on Create.
+
+9. Upload the training and test data to their respective buckets by clicking on the bucket, and then either use the upload files option or drop the file into the
+bucket.
 
