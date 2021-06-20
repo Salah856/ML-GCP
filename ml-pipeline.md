@@ -110,3 +110,33 @@ In the preceding code, we have evaluated lead_model_optimum to find its details.
 ![1](https://user-images.githubusercontent.com/23625821/122663487-2a046800-d19b-11eb-9d6f-b0523484b59d.png)
 
 
+### Testing the model
+
+In BigQuery, the ml.predict() function is used to predict outcomes using the model. Execute the following BigQuery code to test your model:
+
+```sql
+
+SELECT
+prospect_id,
+predicted_label
+FROM
+ml.predict(model `Leads.lead_model_optimum`,
+(
+SELECT
+*
+FROM
+Leads_Test_Data))
+
+```
+
+In the preceding code, based on prospect_id , the model is predicting Lead_Stage of test_data .
+
+You can see the resulting screenshot. Please compare the model's prediction and the Lead_Stage column of test data based on prospect_id to see the accuracy of the
+model:
+
+
+![1](https://user-images.githubusercontent.com/23625821/122663540-764fa800-d19b-11eb-995b-26da8e039e1a.png)
+
+
+
+
