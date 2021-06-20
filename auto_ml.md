@@ -18,3 +18,11 @@ The advantages of Cloud AutoML are as follows:
 - High performance
 - Speed & agility
 
+## The workings of AutoML
+
+AutoML simplifies the supervised learning process by creating a high-level abstraction over the training, evaluation, and deployment of machine learning models. The following diagram shows the workings of AutoML:
+
+![1](https://user-images.githubusercontent.com/23625821/122669306-fdf9de80-d1bc-11eb-8ac3-f7d78a38041e.png)
+
+
+
