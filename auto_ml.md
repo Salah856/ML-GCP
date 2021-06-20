@@ -34,4 +34,25 @@ GCP provides an easy-to-use natural language interface, which can be custom trai
 The dataset is available at http://qwone.com/~jason/20Newsgroups/ for download. This is a collection of approximately 20,000 newsgroup documents, partitioned evenly across 20 different newsgroups. These newsgroups correspond to a different topic. The goal is to train a model based on the training data, evaluate the model, and eventually use it for document classification.
 
 
+### Navigating to the AutoML Natural Language interface
+
+Log in to https://console.cloud.google.com with your GCP credentials. On the navigation menu, go to the ARTIFICIAL INTELLIGENCE section and click on the Natural
+Language submenu:
+
+![1](https://user-images.githubusercontent.com/23625821/122669505-07377b00-d1be-11eb-80e2-5ccd909dfbb4.png)
+
+### Creating the dataset
+
+To create a new dataset, click on the New Dataset button in the title bar:
+
+![1](https://user-images.githubusercontent.com/23625821/122669542-32ba6580-d1be-11eb-946c-fb285f43dad6.png)
+
+
+Provide a unique name for the dataset (in this case, newsgroups ). GCP provides the following options for uploading datasets:
+
+- Upload a CSV file from a computer
+- Upload text items from a computer
+- Select a CSV on cloud storage
+
+
 
