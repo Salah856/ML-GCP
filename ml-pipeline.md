@@ -22,7 +22,6 @@ We have two datasets: leads training data and test data, where the training data
 
 The following chart represents the end-to-end process of loading data into Cloud Storage and BigQuery, and training a model and testing it using the leads data. You can choose a dataset of your choice:
 
-
 ![1](https://user-images.githubusercontent.com/23625821/122663342-fa089500-d199-11eb-9326-7d415d44bfa8.png)
 
 From the preceding diagram, we can see the following:
