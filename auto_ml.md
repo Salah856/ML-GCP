@@ -25,4 +25,13 @@ AutoML simplifies the supervised learning process by creating a high-level abstr
 ![1](https://user-images.githubusercontent.com/23625821/122669306-fdf9de80-d1bc-11eb-8ac3-f7d78a38041e.png)
 
 
+## Document classification using AutoML Natural Language
+
+Document classification is a very important use case that primarily deals with analyzing the contents of a document or a large archive of documents (for example, legal documents). At times, manual classification requires a lot of effort and may not be feasible.
+
+GCP provides an easy-to-use natural language interface, which can be custom trained for document classification based on AutoML. Let's understand the classification process with a publicly available dataset of 20 newsgroups.
+
+The dataset is available at http://qwone.com/~jason/20Newsgroups/ for download. This is a collection of approximately 20,000 newsgroup documents, partitioned evenly across 20 different newsgroups. These newsgroups correspond to a different topic. The goal is to train a model based on the training data, evaluate the model, and eventually use it for document classification.
+
+
 
