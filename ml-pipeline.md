@@ -54,3 +54,35 @@ Let's discuss the step-by-step process to load data into Cloud Storage:
 9. Upload the training and test data to their respective buckets by clicking on the bucket, and then either use the upload files option or drop the file into the
 bucket.
 
+
+### Training the model
+
+The following BigQuery code snippet will be used to train the leads model using logistic regression from the Leads_Training table:
+
+```sql
+
+CREATE MODEL
+`Leads.lead_model_optimum`
+OPTIONS
+(model_type = 'logistic_reg') AS
+SELECT
+Lead_Stage AS label,
+lead_origin,
+lead_source,
+...,
+...,
+...,
+...,
+receive_more_updates_about_our_courses,
+update_me_on_supply_chain_content,
+Get_updates_on_PGDMHBSCM,
+city_new,
+...,
+...,
+Asymmetrique_Activity_Score,
+Asymmetrique_Profile_Score,
+Last_Notable_Activity
+FROM
+Leads.Leads_Training_Data;
+
+```
