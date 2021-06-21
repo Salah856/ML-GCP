@@ -60,6 +60,25 @@ cases, DialogFlow provides a fulfillment interface to fork the request to extern
 ![1](https://user-images.githubusercontent.com/23625821/122716754-f5f87800-d26a-11eb-8140-f44c688d93c5.png)
 
 
+### Building a DialogFlow agent
+
+As a generic GCP principle, any service exists within a GCP project. One GCP project can contain one DialogFlow agent. If we want to have multiple DialogFlow agents, they need to be managed under a different project. A project organizes all the resources required by the DialogFlow agent. As a prerequisite, we need to enable APIs, monitoring tools, and billing information.
+
+We need to provide access to user accounts for the project and set access controls at a granular level so that the user has access to a minimum service footprint.
+
+We will work from the DialogFlow console by navigating to https://dialogflow.cloud.google.com/#/getStarted . 
+
+Let's build a DialogFlow agent for a bookstore. Once you navigate to the console, click on the Create Agent button on the side menu or the console landing page. Select the agent name based on the context of the application along with the default language and the timezone. The DialogFlow console provides an option to use an existing GCP project as well as the creation of a new project during the agent creation workflow from the console. The following screenshot shows the agent creation screen in the DialogFlow console:
 
 
-- 
+
+
+We will create a new Google project from the DialogFlow console. Click on the Create button in the top-right corner. Once the agent is created, we are taken to the intents screen. DialogFlow provides two default intents for every agent. These are preconfigured intents that are typically required by any application:
+
+![1](https://user-images.githubusercontent.com/23625821/122731336-78893380-d27b-11eb-98f1-042039b7ffb1.png)
+
+
+- Welcome intents: This is a default intent for beginning the conversation. As a best practice, the agent needs to greet the user and match the overall user style of the greeting. It is also recommended that the welcome intent should reply with the domain-specific capabilities the agent provides. For example, in the case of the bookstore agent, the agent needs to greet the user and talk briefly about the bookstore. 
+
+- Fallback intent: This is a default intent that is invoked when the agent cannot match the user expression with any of the configured intents.
+
