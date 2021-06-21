@@ -82,3 +82,27 @@ We will create a new Google project from the DialogFlow console. Click on the Cr
 
 - Fallback intent: This is a default intent that is invoked when the agent cannot match the user expression with any of the configured intents.
 
+All the intents are configured with contexts, events, training phrases, actions and parameters, responses, and fulfillments. Let's look at the default welcome intent. The welcome intent can be configured and modified for engaging the user based on the application context:
+
+
+![1](https://user-images.githubusercontent.com/23625821/122731524-b0907680-d27b-11eb-8b5f-81a1dc255601.png)
+
+The default welcome intent is configured with a set of training phrases and responses. Let's modify the default welcome intent to suit our bookstore agent. We can add a new response(s) as well as delete the default responses provided by DialogFlow.
+
+
+The following screenshot illustrates the configuration of the welcome intent:
+
+![1](https://user-images.githubusercontent.com/23625821/122731727-df0e5180-d27b-11eb-8caf-85d3e62c9c39.png)
+
+The DialogFlow console provides an easy way to quickly test the configured responses. On the right pane, DialogFlow provides a way to provide audio as well as text input and simulates the response from the DialogFlow agent based on the configured intent. Here is a screenshot that illustrates the response from the welcome intent:
+
+
+![1](https://user-images.githubusercontent.com/23625821/122732197-5512b880-d27c-11eb-8005-77264b6a72da.png)
+
+
+Let's create a couple of custom intents to help the MyBookStore DialogFlow agent to continue a conversation with the caller beyond the  welcome intent. We want
+the agent to perform the following two tasks:
+
+- Mention a list of new arrivals in the current month.
+- Reserve a copy of the book for the user to pick up.
+
