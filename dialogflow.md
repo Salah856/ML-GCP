@@ -131,3 +131,12 @@ The following screenshot shows the process of configuring training phrases and t
 Add multiple variations of possible user phrases within a specific custom intent. When we use natural language for communication, there are numerous ways in which we can express a particular thing. The more training phrases we configure, the more DialogFlow is able to train the model to accurately handle various ways of communicating. Internally, DialogFlow leverages ML algorithms that get better with more training data.
 
 
+It is recommended that the intent needs to be configured with at least 10 combinations of the training phrases:
+
+1. DialogFlow provides a training tool for the implementation of a feedback loop and improves the accuracy of the agent. Once the DialogFlow agent is deployed
+and the users start communicating with the agent, there are phrases and utterances from the user that get logged in DialogFlow. We need to enable the settings to log interactions to DialogFlow. The settings can be found on the General tab on the agent settings page. The following screenshot shows the general settings for the DialogFlow agent:
+
+![1](https://user-images.githubusercontent.com/23625821/122733055-1c271380-d27d-11eb-9cfe-8c80b6d7d83a.png)
+
+
+
