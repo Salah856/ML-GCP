@@ -139,4 +139,15 @@ and the users start communicating with the agent, there are phrases and utteranc
 ![1](https://user-images.githubusercontent.com/23625821/122733055-1c271380-d27d-11eb-9cfe-8c80b6d7d83a.png)
 
 
+2. Add various responses for the New Arrivals intent. Within the context of this intent, all the variations of the input expressions expect a response from the
+agent to mention the list of new arrivals at the bookstore. Similar to what we did with the default welcome intent, we can configure multiple responses that
+provide information about new arrivals to the caller. DialogFlow randomly chooses a specific instance of the configured responses for each user expression that matches the configured training phrases within the intent.
+
+
+3. The agent configuration can be tested with a set of training phrases.
+ 
+4. DialogFlow shows the user expression that was interpreted and matched with the intent.
+
+5. The agent's response based on the intent configuration.
+
 
