@@ -106,3 +106,28 @@ the agent to perform the following two tasks:
 - Mention a list of new arrivals in the current month.
 - Reserve a copy of the book for the user to pick up.
 
+
+We need to create two intents in this case. Let's create our first intent, which informs users about the latest arrivals at the bookstore in the current month. For example, when the user says 'I want to know about the latest arrivals', the agent should respond with 'Here is a list of new books that have arrived this month. Book - 1, Author, Publication'. The following screenshot shows the process of the creation of a new custom intent:
+
+
+![1](https://user-images.githubusercontent.com/23625821/122732444-92774600-d27c-11eb-9e06-e66bb0d37761.png)
+
+
+As seen from the preceding screenshot, we perform the following steps:
+
+1. Click on the Create Intent button in the DialogFlow console.
+2. Provide a name for the custom intent. In this case, we are naming it New Arrivals.
+
+3. Click on the Save button.
+4. As a basic configuration, configure the various training phrases that the agent can respond to within the current intent.
+
+
+The following screenshot shows the process of configuring training phrases and the agent's response within the New Arrivals intent:
+
+
+![1](https://user-images.githubusercontent.com/23625821/122732626-c18db780-d27c-11eb-91da-dfc9dea86ca3.png)
+
+
+Add multiple variations of possible user phrases within a specific custom intent. When we use natural language for communication, there are numerous ways in which we can express a particular thing. The more training phrases we configure, the more DialogFlow is able to train the model to accurately handle various ways of communicating. Internally, DialogFlow leverages ML algorithms that get better with more training data.
+
+
