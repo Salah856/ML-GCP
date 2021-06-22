@@ -45,3 +45,46 @@ gsutil cp ./model.bst gs://your-bucket/model.bst
 
 ```
 
+## Deploying models and their version
+
+The Google Cloud AI Platform uses model and version resources to organize your trained models. An AI Platform is a container for the models of your learning machine. In the AI Platform, you create a database resource to deploy a model, construct a model version, and then connect the model version to the model file that is stored in cloud storage. You can use the gcloud console to build a default tool for your product versions, filling out your preferred model name without the enclosed brackets, as shown here:
+
+
+```bash
+
+gcloud ai-platform models create "[YOUR-MODEL-NAME]"
+
+```
+
+
+By example, a model version with the Cloud ML Service Agent Identity and Access Management (IAM) function has permissions from the Google-managed service account.
+For most situations, this default service account is adequate. However, if you are using a custom prediction routine and need to have a different set of permissions in your model version, you can add another service account for your use. For example, if your model version needs access to a cloud storage bucket from a specific Google Cloud project, a service account with reading authorization from that bucket can be defined. The sample Python code to create a service account is shown in the following code block:
+
+
+```py
+
+import os
+
+from google.oauth2 import service_account
+import googleapiclient.discovery
+
+
+def create_service_account(project_id, name, display_name):
+
+  """Creates a service account."""
+  credentials=service_account.Credentials.from_service_account_file(filename=os.environ['GOOGLE_APPLICATION_CREDENTIALS'],
+      scopes['https://www.googleapis.com/auth/ cloud-platform'])
+
+  service = googleapiclient.discovery.build('iam', 'v1', credentials=credentials)
+
+  my_service_account = service.projects().serviceAccounts().create( name='projects/' + project_id, 
+        body={ 'accountId': name,'serviceAccount': {'displayName':display_name}}
+      ).execute()
+
+  print('Created service account: ' + my_service_account['email'])
+  
+  return my_service_account
+
+
+```
+
