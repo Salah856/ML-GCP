@@ -35,3 +35,13 @@ gsutil cp -r $SAVED_MODEL_DIR gs://your-bucket
 
 ```
 
+If you have exported your model using scikit-learn or XGBoost, then you can use the following code to export your models in the .joblib , *.pk1 , or *.bst formats:
+
+```bash
+
+gsutil cp ./model.joblib gs://your-bucket/model.joblib
+gsutil cp ./model.pkl gs://your-bucket/model.pkl
+gsutil cp ./model.bst gs://your-bucket/model.bst
+
+```
+
