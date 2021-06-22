@@ -23,6 +23,7 @@ gsutil mb -l $REGION gs://$BUCKET_NAME
 ```
 
 
+
 ## Uploading saved models to a Google Cloud Storage bucket
 
 The next step is that you upload your models to a Google Cloud Storage bucket. If you are using Tensorflow SavedModels, then you can use the following code to upload your models:
