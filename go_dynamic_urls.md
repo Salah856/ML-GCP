@@ -128,3 +128,7 @@ go run main.go
 
 
 ```
+
+## References
+
+<a href="https://noahkreiger.medium.com/golang-building-dynamic-urls-4e93cab86e72"> Dynamic Urls with Go  </a>
