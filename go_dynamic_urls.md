@@ -119,3 +119,12 @@ func main() {
 ```
 
 
+```bash
+go run main.go
+
+  2021/06/22 22:36:51 GET
+  
+  2021/06/22 22:36:51 https://api.weatherapi.com/forecast.json?dateKey=testDate&regionKey=testRegion
+
+
+```
