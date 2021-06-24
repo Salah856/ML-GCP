@@ -5,3 +5,8 @@ You see a lot of stories on medium about how to do complex tasks or architect a 
 
 In this tutorial, we will walk through how to build URLs cleanly, config-driven, and best of all, testable
 
+First, we are going to define our struct, the struct will be our basis for building config-driven URLs. Almost every REST URL is made up of static (host, schema, etc) and dynamic parts (query and route parameters). The struct will host all of our static parts derived from the application configuration.
+
+We will give the struct default values, but in a real-world application, I would recommend populating the struct through a config file.
+
+
