@@ -82,4 +82,40 @@ func (w *weatherAPI) ForecastURL(date, region string) Formatter {
 
 ```
 
+At the top, we have our Formatter return type, which is basically just defining what our method receiver will return. A string for the HTTP method, and the Golang built-in type url.URL as the second.
+
+Next, we are creating our base url.URL object with the values held in the struct, since this is a go method receiver. These should be the config-driven static values that you add to that specific URL.
+
+Below the static values, we are adding the dynamic query parameters to the URL, which we encode and assign.
+
+Let’s take a look at our main.go integration with our new URL building receiver.
+
+```go
+
+func main() {
+	conn := weatherAPI{
+		Scheme:    "https",
+		Host:      "api.weatherapi.com",
+		Endpoints: weatherEndpoints{
+			Forecast: endpoint{
+				Path:   "/forecast.json",
+				Method: "GET",
+			},
+			Sports: endpoint{
+				Path:   "/sports.json",
+				Method: "GET",
+			},
+		},
+	}
+
+	f := conn.ForecastURL("testDate", "testRegion")
+
+	m, u := f()
+
+	log.Println(m)
+	log.Println(u)
+}
+
+```
+
 
