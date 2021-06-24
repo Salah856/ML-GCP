@@ -53,3 +53,33 @@ func main() {
 }
 
 ```
+
+
+Second, let’s define our first dynamic endpoint and than break it down piece by piece to make sure we truly understand it.
+
+```go
+
+type Formatter func() (string, *url.URL)
+
+func (w *weatherAPI) ForecastURL(date, region string) Formatter {
+	return func() (string, *url.URL) {
+		u := &url.URL{
+			Scheme:      w.Scheme,
+			Host:        w.Host,
+			Path: 	     w.Endpoints.Forecast.Path,
+		}
+
+		rq := u.Query()
+
+		rq.Set("dateKey", date)
+		rq.Set("regionKey", region)
+
+		u.RawQuery = rq.Encode()
+
+		return http.MethodGet, u
+	}
+}
+
+```
+
+
