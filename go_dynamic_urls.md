@@ -9,4 +9,47 @@ First, we are going to define our struct, the struct will be our basis for build
 
 We will give the struct default values, but in a real-world application, I would recommend populating the struct through a config file.
 
+```go
 
+package main
+
+import (
+	"log"
+)
+
+type endpoint struct {
+	Path string `yaml:"path"`
+	Method string `yaml:"method"`
+}
+
+type weatherAPI struct {
+	Scheme string `yaml:"scheme"`
+	Host string `yaml:"host"`
+	Endpoints weatherEndpoints `yaml:"endpoints"`
+}
+
+type weatherEndpoints struct {
+	Forecast endpoint `yaml:"forecast"`
+	Sports endpoint `yaml:"sports"`
+}
+
+func main() {
+	conn := weatherAPI{
+		Scheme:    "https",
+		Host:      "api.weatherapi.com/v1",
+		Endpoints: weatherEndpoints{
+			Forecast: endpoint{
+				Path:   "/forecast.json",
+				Method: "GET",
+			},
+			Sports: endpoint{
+				Path:   "/sports.json",
+				Method: "GET",
+			},
+		},
+	}
+	
+	log.Println(conn)
+}
+
+```
